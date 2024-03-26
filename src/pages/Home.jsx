@@ -1,6 +1,5 @@
 import Hero from '../components/Hero';
 import Books from '../components/Books';
-import { createContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {

@@ -1,9 +1,6 @@
 import Book from "./Book";
 
 
-
-
-
 const Books = ({data}) => {
    
  

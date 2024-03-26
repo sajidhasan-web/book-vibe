@@ -7,8 +7,6 @@ const MainLayout = () => {
     return (
     <div className="container mx-auto px-5 md:8 lg:10">
         <Navbar></Navbar>
-        {/* <Hero></Hero>
-        <Books></Books> */}
         <Outlet></Outlet>
         <Footer></Footer>
     </div>

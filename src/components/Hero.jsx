@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import cover from "../assets/pngwing 1.png";
 
 const Hero = () => {
@@ -9,9 +10,9 @@ const Hero = () => {
             <span className="text-[#23BE0A]">Books</span> to freshen up your bookshelf
           </h1>
            <div>
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#23BE0A] text-white work-sans">
+            <Link to='/listed-book' className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#23BE0A] text-white work-sans">
               View The List
-            </button>
+            </Link>
           </div>
         </div>
         <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
