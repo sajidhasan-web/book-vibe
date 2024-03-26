@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar"
 
 
 function App() {
@@ -5,10 +6,10 @@ function App() {
 
   return (
     <>
+    <div className="container mx-auto px-5 md:8 lg:10">
+     <Navbar></Navbar>
+    </div>
      
-     <h1 className="text-xl font-bold underline">
-      Hello world!
-    </h1>
       
       
     </>
