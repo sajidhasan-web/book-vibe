@@ -21,7 +21,7 @@ const Book = ({data}) => {
             {/* tags */}
             <div className="flex flex-wrap gap-4 mt-5">
                 {
-                    tags.map((tag, idx) => <p key={idx} className="bg-[#F3F3F3] px-4 py-1 rounded-r-full rounded-l-full text-[#23BE0A] font-medium work-sans">{tag}</p>)
+                    tags.map((tag, idx) => <p key={idx} className="bg-[#F3F3F3] px-4 py-1 rounded-r-full hover:underline rounded-l-full text-[#23BE0A] font-medium work-sans">#{tag}</p>)
                 }
             </div>
             <div className="space-y-2 mt-2">

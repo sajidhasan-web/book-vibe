@@ -43,12 +43,12 @@ const Navbar = () => {
         <a className="btn btn-ghost text-2xl font-bold">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 flex items-center gap-3">
+        <ul className="menu menu-horizontal px-1 flex items-center gap-4">
     
          <NavLink
             to="/"
             className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "border px-6 py-3 border-[#23BE0A] text-[#23BE0A] font-bold rounded-xl" : "font-bold"
+              isPending ? "pending" : isActive ? "border px-5 py-2 border-[#23BE0A] text-[#23BE0A] font-bold rounded-xl" : " px-5 py-2"
             }
           >
            Home
@@ -58,7 +58,7 @@ const Navbar = () => {
           <NavLink
             to="/listed-book"
             className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "border px-6 py-3 border-[#23BE0A] text-[#23BE0A] font-bold rounded-xl" : "font-bold"
+              isPending ? "pending" : isActive ? "border px-5 py-2 border-[#23BE0A] text-[#23BE0A] font-bold rounded-xl" : " px-5 py-2"
             }
           >
            Listed Books
@@ -69,7 +69,7 @@ const Navbar = () => {
          <NavLink
             to="/pages-to-read"
             className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "border px-6 py-3 border-[#23BE0A] text-[#23BE0A] font-bold rounded-xl" : "font-bold"
+              isPending ? "pending" : isActive ? "border px-5 py-2 border-[#23BE0A] text-[#23BE0A] font-bold rounded-xl" : " px-5 py-2"
             }
           >
            Pages to Read

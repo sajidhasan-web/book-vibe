@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
+
+
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBooks } from "../utils";
 
 
 const BookDetails = () => {
@@ -7,10 +9,20 @@ const BookDetails = () => {
     const {id} = useParams();
     const intId = parseInt(id);
     const book = books.find(book => book.bookId === intId)
-   
-    console.log(book);
-
     const {image,tags,author,bookName,category,rating, review,totalPages,publisher,yearOfPublishing } = book
+
+   
+
+    const handleRead = (book) =>{
+        saveBooks(book)
+    }
+
+    const handleWishlist = () =>{
+
+    }
+
+
+
     return (
         <div className='container mx-auto mt-[50px] md:mt-[100px] px-4'>
         <div className='md:flex justify-between'>
@@ -58,8 +70,8 @@ const BookDetails = () => {
                 </div>
 
                 <div className='mt-8 space-x-4 work-sans'>
-                    <button className='border-[1px] border-[#1313134D] px-7 py-4 rounded-[8px] text-[#131313] text-[1.125rem] font-semibold'>Read</button>
-                    <button  className='border-[#1313134D] px-7 py-4 rounded-[8px] text-[#FFF] text-[1.125rem] font-semibold bg-[#50B1C9]'>Wishlist</button>
+                    <button onClick={()=>handleRead(book)} className='border-[1px] border-[#1313134D] px-7 py-4 rounded-[8px] text-[#131313] text-[1.125rem] font-semibold'>Read</button>
+                    <button onClick={()=>handleWishlist(book)}  className='border-[#1313134D] px-7 py-4 rounded-[8px] text-[#FFF] text-[1.125rem] font-semibold bg-[#50B1C9]'>Wishlist</button>
                 </div>
             </div>
         </div>
