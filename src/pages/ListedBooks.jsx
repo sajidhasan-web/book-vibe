@@ -17,9 +17,9 @@ const ListedBooks = () => {
           <option disabled selected>
             Sort By
           </option>
-          <option>Large Apple</option>
-          <option>Large Orange</option>
-          <option>Large Tomato</option>
+          <option>Rating</option>
+          <option>Number of pages</option>
+          <option>Published</option>
         </select>
       </div>
       

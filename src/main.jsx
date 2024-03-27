@@ -15,12 +15,14 @@ import PagesToRead from './pages/PagesToRead.jsx';
 import toast, { Toaster } from 'react-hot-toast';
 import ReadBooks from './components/ReadBooks.jsx';
 import WishlistBooks from './components/WishlistBooks.jsx';
+import Error from './components/Error.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement:<Error></Error>,
     children:[
     {
       path: '/',
