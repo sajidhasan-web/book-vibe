@@ -27,11 +27,24 @@ export const saveBooks = (book) =>{
 
 // wishlist books
 
-export const getWishlistBooks = () =>{
-    let wishlist = []
+// export const getWishlistBooks = () =>{
+//     let wishlist = []
+//     const storedBooks = localStorage.getItem('wishlist')
+//     if(storedBooks){
+//         wishlist.JSON.parse(storedBooks)
+//     }
+//     return wishlist
+// }
+
+export const getWishlistBooks = () => {
+    let wishlist = [];
     const storedBooks = localStorage.getItem('wishlist')
     if(storedBooks){
-        wishlist.JSON.parse(storedBooks)
+        try{
+            wishlist = JSON.parse(storedBooks);
+        }catch(error){
+            console.error('Error parsing wishlist book:', error)
+        }
     }
     return wishlist
 }

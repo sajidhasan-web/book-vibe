@@ -1,22 +1,31 @@
 import { useEffect, useState } from "react";
 import { getWishlistBooks } from "../utils";
 
+import ReadBook from "./ReadBook";
+
+
+
+
 
 const WishlistBooks = () => {
 
-    const [books, setBooks] = useState([])
-    // get book from localStorage
-    useEffect(()=>{
-        const getReadBooks = getWishlistBooks()
-        setBooks(getReadBooks)
-    },[])
 
-    console.log(books);
+    let [wishlistBooks, setWishlistBooks] = useState([])
+
+    useEffect(()=>{
+        let books = getWishlistBooks()
+        setWishlistBooks(books)
+    },[])
+    
+    
+    
 
     return (
-        <div>
-            <h2>Wishlist books</h2>
-        </div>
+        <div className="space-y-6">
+            {
+              wishlistBooks.map(book => <ReadBook key={book.bookId} book={book}></ReadBook>)
+            }
+       </div>
     );
 };
 

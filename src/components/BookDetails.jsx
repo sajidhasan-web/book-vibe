@@ -71,7 +71,7 @@ const BookDetails = () => {
 
                 <div className='mt-8 space-x-4 work-sans'>
                     <button onClick={()=>handleRead(book)} className='border-[1px] border-[#1313134D] px-7 py-4 rounded-[8px] text-[#131313] text-[1.125rem] font-semibold'>Read</button>
-                    <button onClick={()=>handleWishlist(book)}  className='border-[#1313134D] px-7 py-4 rounded-[8px] text-[#FFF] text-[1.125rem] font-semibold bg-[#50B1C9]'>Wishlist</button>
+                    <button onClick={()=>handleWishlist(book)} className='border-[#1313134D] px-7 py-4 rounded-[8px] text-[#FFF] text-[1.125rem] font-semibold bg-[#50B1C9]'>Wishlist</button>
                 </div>
             </div>
         </div>

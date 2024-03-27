@@ -13,7 +13,7 @@ const ReadBooks = () => {
         setBooks(getReadBooks)
     },[])
    
-    console.log(books);
+    // console.log(books);
 
   return (
    <div className="space-y-6">

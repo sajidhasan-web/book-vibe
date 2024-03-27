@@ -31,7 +31,7 @@ const ListedBooks = () => {
             >
                 <span>Read Books</span>
             </Link>
-            <Link to='wishlist-books'
+            <Link to='wishlist'
                 onClick={()=>setTabIndex(1)}
                
                 className={`flex items-center flex-shrink-0 px-5 py-3 ${tabIndex == 1 ? " border border-b-0 rounded-tr-lg rounded-tl-lg" : "border-b"} space-x-2 border-b dark:border-gray-600 dark:text-gray-600`}
@@ -39,7 +39,6 @@ const ListedBooks = () => {
                 <span>Wishlist Books</span>
             </Link>
         </div>
-
         <div className="mt-10">
             <Outlet></Outlet>
         </div>
