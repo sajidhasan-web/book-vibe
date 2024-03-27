@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+import SortBy from "../components/SortBy";
 
 
 
 const ListedBooks = () => {
-
     const [tabIndex, setTabIndex] = useState(0)
   
   return (
@@ -12,16 +12,8 @@ const ListedBooks = () => {
       <div className="bg-[#1313130D] py-7 w-full flex justify-center items-center work-sans rounded-2xl">
         <h3 className="text-3xl font-bold">Books</h3>
       </div>
-      <div className="flex justify-center mt-7">
-        <select className="select select-bordered  sm:select-sm  md:select-md lg:select-lg w-full max-w-xs bg-[#23BE0A] text-white font-semibold">
-          <option disabled selected>
-            Sort By
-          </option>
-          <option>Rating</option>
-          <option>Number of pages</option>
-          <option>Published</option>
-        </select>
-      </div>
+        {/* sort options */}
+         <SortBy></SortBy>
       
         <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap mt-5">
             <Link to=''

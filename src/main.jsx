@@ -16,6 +16,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import ReadBooks from './components/ReadBooks.jsx';
 import WishlistBooks from './components/WishlistBooks.jsx';
 import Error from './components/Error.jsx';
+import SortBy from './components/SortBy.jsx';
 
 
 const router = createBrowserRouter([
@@ -45,7 +46,11 @@ const router = createBrowserRouter([
         {
           path:'wishlist',
           element:<WishlistBooks></WishlistBooks>,
-        }
+        },
+         {
+          path:'sort',
+          element:<SortBy></SortBy>
+         }
       ]
     },
     {
