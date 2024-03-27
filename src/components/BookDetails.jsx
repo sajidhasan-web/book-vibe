@@ -1,7 +1,7 @@
 
 
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveBooks } from "../utils";
+import { saveBooks, saveWishlistBooks } from "../utils";
 
 
 const BookDetails = () => {
@@ -17,8 +17,8 @@ const BookDetails = () => {
         saveBooks(book)
     }
 
-    const handleWishlist = () =>{
-
+    const handleWishlist = (book) =>{
+        saveWishlistBooks(book)
     }
 
 
