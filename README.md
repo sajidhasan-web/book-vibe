@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 
 # Book Vibe
 
-Visit the live site: [MyBookshelf](https://www.mybookshelf.com)
+Visit the live site: [MyBookshelf](https://66059209cf449123b17bd55d--legendary-pastelito-89c6cd.netlify.app)
 
 ## Features and Characteristics
 
