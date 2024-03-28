@@ -3,8 +3,7 @@ import CustomBarChart from "../components/CustomBarChart";
 
 const PagesToRead = () => {
     return (
-        <div>
-            <h1>Pages to read!</h1>
+        <div className="h-[calc(100vh-180px)] w-full flex flex-col justify-center items-center">
             <CustomBarChart></CustomBarChart>
         </div>
     );

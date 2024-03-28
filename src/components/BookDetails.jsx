@@ -49,7 +49,7 @@ const BookDetails = () => {
                 
                        <div className='space-x-3 flex-wrap'>
                             {
-                                tags.map((tag, idx) =><button key={idx} className="text-[#23BE0A] py-[6px] px-3 m-2 bg-[#23BE0A0D] rounded-[30px]">{tag}</button>)
+                                tags.map((tag, idx) =><button key={idx} className="text-[#23BE0A] py-[6px] px-3 m-2 bg-[#23BE0A0D] rounded-[30px] hover:underline">#{tag}</button>)
                             }
                        </div>
                 </div>
@@ -70,8 +70,8 @@ const BookDetails = () => {
                 </div>
 
                 <div className='mt-8 space-x-4 work-sans'>
-                    <button onClick={()=>handleRead(book)} className='border-[1px] border-[#1313134D] px-7 py-4 rounded-[8px] text-[#131313] text-[1.125rem] font-semibold'>Read</button>
-                    <button onClick={()=>handleWishlist(book)} className='border-[#1313134D] px-7 py-4 rounded-[8px] text-[#FFF] text-[1.125rem] font-semibold bg-[#50B1C9]'>Wishlist</button>
+                    <button onClick={()=>handleRead(book)} className='border-[1px] border-[#1313134D] px-7 py-4 rounded-[8px] text-[#131313] text-[1.125rem] font-semibold hover:bg-[#23BE0A] transition hover:text-white'>Read</button>
+                    <button onClick={()=>handleWishlist(book)} className='border-[#1313134D] px-7 py-4 rounded-[8px] text-[#FFF] text-[1.125rem] font-semibold bg-[#50B1C9] hover:opacity-60'>Wishlist</button>
                 </div>
             </div>
         </div>

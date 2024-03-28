@@ -74,6 +74,22 @@ const Navbar = () => {
           >
            Pages to Read
           </NavLink>
+         <NavLink
+            to="/meet"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "border px-5 py-2 border-[#23BE0A] text-[#23BE0A] font-bold rounded-xl" : " px-5 py-2"
+            }
+          >
+           Meet
+          </NavLink>
+         <NavLink
+            to="/contact-us"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "border px-5 py-2 border-[#23BE0A] text-[#23BE0A] font-bold rounded-xl" : " px-5 py-2"
+            }
+          >
+           Contact Us
+          </NavLink>
         
         </ul>
       </div>
