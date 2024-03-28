@@ -1,17 +1,18 @@
 const ContactUs = () => {
   return (
-    <section className="py-6 h-">
-      <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
-        <div className="py-6 md:py-0 md:px-6">
-          <h1 className="text-4xl font-bold">Get in touch</h1>
-          <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
-          <div className="space-y-4">
+    <div className="h-[calc(100vh-180px)] w-full flex flex-col justify-center items-center">
+        <section className="md:py-6 w-[80%]">
+      <div className="grid w-full grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+        <div className="md:py-0 md:px-6">
+          <h1 className="text-2xl md:text-4xl font-bold">Get in touch</h1>
+          <p className="md:pt-2 pb-4">Fill in the form to start a conversation</p>
+          <div className="md:space-y-4">
             <p className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="w-5 h-5 mr-2 sm:mr-6"
+                className="w-5 md:h-5 mr-2 sm:mr-6"
               >
                 <path
                   fillRule="evenodd"
@@ -19,7 +20,7 @@ const ContactUs = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span>Fake address, 9999 City</span>
+              <span>Address, 1205 Dhaka</span>
             </p>
             <p className="flex items-center">
               <svg
@@ -42,7 +43,7 @@ const ContactUs = () => {
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
               </svg>
-              <span>contact@business.com</span>
+              <span>book@vibe.com</span>
             </p>
           </div>
         </div>
@@ -84,6 +85,7 @@ const ContactUs = () => {
         </form>
       </div>
     </section>
+    </div>
   );
 };
 

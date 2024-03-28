@@ -38,6 +38,12 @@ const Navbar = () => {
             <li>
               <NavLink to="/pages-to-read">Pages to Read</NavLink>
             </li>
+            <li>
+              <NavLink to="/meet">Meet</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact-us">Contact Us</NavLink>
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-2xl font-bold">Book Vibe</a>
